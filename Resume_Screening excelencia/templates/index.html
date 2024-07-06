@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Upload</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>Upload Resume</h1>
+            <p>Upload Resumes to calculate ats score.</p>
+            <p>PDF,docx, Images are allowed.</p>
+        </div>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="drop-section" id="drop-section">
+                <div class="col">
+                    <div class="cloud-icon">
+                        <img src="./static/cloud.png" alt="cloud">
+                    </div>
+                    <span>Drag & Drop your files here</span>
+                    <span>OR</span>
+                    <button type="button" class="file-selector">Browse Files</button>
+                    <input type="file" class="file-selector-input" name="files[]" multiple>
+                </div>
+                <button type="submit" id="uploadButton" style="display: none;">Upload</button>
+            </div>
+        </form>
+        <div class="list-section">
+            <ul class="list" id="file-list"></ul>
+        </div>
+    </div>
+    <script src="./static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Add your custom styles here */
+body{
+    background-image: url(back.jpg);
+}
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(47, 171, 238,0.7);
+    margin-top: 120px;
+    border-radius: 30px;
+    
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid #fbf6f6;
+    padding: 10px;
+    text-align: left;
+    color:black;
+    font-size: 18px;
+    font-weight: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.best-resume {
+    background-color: #e9f9e9;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 20px;
+}
